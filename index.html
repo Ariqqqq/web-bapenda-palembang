@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bapenda Palembang</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo-container">
+                <img src="IMAGE/logo-bapenda.png" alt="Logo Bapenda" class="logo-img">
+                <div class="logo-text">BAPENDA <span>PLG</span></div>
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#profil">Tentang Kami</a></li>
+                <li><a href="#pajak">Pajak Daerah</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Alur Pelayanan <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-grid"> 
+                            <a href="alurpelayanan.html#hotel">Pajak Hotel</a>
+                            <a href="alurpelayanan.html#restoran">Pajak Restoran</a>
+                            <a href="alurpelayanan.html#hiburan">Pajak Hiburan</a>
+                            <a href="alurpelayanan.html">Pajak Reklame</a>
+                            <a href="alurpelayanan.html#penerangan">Pajak Penerangan Jalan</a>
+                            <a href="alurpelayanan.html#mblb">Pajak MBLB</a>
+                            <a href="alurpelayanan.html#parkir">Pajak Parkir</a>
+                            <a href="alurpelayanan.html#airtanah">Pajak Air Tanah</a>
+                            <a href="alurpelayanan.html#walet">Pajak Sarang Burung Walet</a>
+                            <a href="alurpelayanan.html#pbb">Pajak PBB-P2</a>
+                            <a href="alurpelayanan.html#bphtb">Pajak BPHTB</a>
+                            <a href="alurpelayanan.html#bphtb">Pajak MINERBA</a>
+                            <a href="alurpelayanan.html#bphtb">Opsen Pajak</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BERANDA -->
+    <section id="beranda" class="carousel-container">
+        <div class="carousel-slide active" style="background-image: url('IMAGE/slide1.jpg');">
+            <div class="overlay"></div> <div class="slide-content">
+                <h1 class="slide-title">Visi & Misi</h1>
+                <h2 class="slide-subtitle">Bapenda Kota Palembang</h2>
+                <div class="visi-misi-text">
+                    <p><strong>Visi:</strong> "Terwujudnya Pengelolaan Pendapatan Daerah yang Andal dan Profesional."</p>
+                    <p><strong>Misi:</strong></p>
+                    <ul>
+                        <li>Meningkatkan Pendapatan Asli Daerah melalui intensifikasi dan ekstensifikasi pajak dan retribusi daerah.</li>
+                        <li>Meningkatkan kualitas pelayanan dan sistem administrasi perpajakan daerah berbasis teknologi informasi.</li>
+                        <li>Mewujudkan tata kelola pengelolaan pendapatan daerah yang profesional, transparan, dan akuntabel.</li>
+                        <li>Meningkatkan kesadaran dan kepatuhan wajib pajak daerah.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-slide" style="background-image: url('IMAGE/slide2.jpg');">
+            <div class="overlay"></div>
+            <div class="slide-content">
+                <h1 class="slide-title">Pajak Anda, Pembangunan Kita</h1>
+                <p class="slide-desc">Mari bijak taat pajak. Kontribusi Anda adalah wujud cinta untuk kemajuan infrastruktur dan kesejahteraan warga Kota Palembang.</p>
+            </div>
+        </div>
+
+        <div class="carousel-slide" style="background-image: url('IMAGE/slide3.jpg');">
+            <div class="overlay"></div>
+            <div class="slide-content">
+                <h1 class="slide-title">Pelayanan Prima</h1>
+                <p class="slide-desc">Kami berkomitmen memberikan pelayanan yang <strong>Cepat, Transparan, dan Akuntabel</strong> untuk seluruh Wajib Pajak di Kota Palembang.</p>
+            </div>
+        </div>
+
+        <button class="carousel-btn prev-btn" onclick="prevSlide()">❮</button>
+        <button class="carousel-btn next-btn" onclick="nextSlide()">❯</button>
+
+        <div class="carousel-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+    <section id="profil" class="profil-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                <h2>Tentang Bapenda Palembang</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="profil-container-new">
+                
+                <div class="profil-row">
+                    <div class="profil-col-text" data-aos="fade-right" data-aos-duration="1000">
+                        <h3>Tugas Pokok & Fungsi</h3>
+                        <p>Badan Pendapatan Daerah (Bapenda) Kota Palembang adalah unsur pelaksana urusan pemerintahan bidang keuangan, khususnya dalam hal pengelolaan dan pemungutan Pendapatan Asli Daerah (PAD).</p>
+                        <p>Kami bertugas merumuskan kebijakan teknis, mengkoordinasikan, serta melaksanakan pelayanan dan administrasi perpajakan daerah untuk memastikan keberlanjutan roda pembangunan di Kota Palembang. Melalui inovasi dan digitalisasi layanan, kami berupaya memberikan kemudahan akses bagi seluruh Wajib Pajak.</p>
+                    </div>
+                    <div class="profil-col-img" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="IMAGE/kantor-bapenda.jpg" alt="Kantor Bapenda Palembang">
+                    </div>
+                </div>
+
+                <div class="profil-row">
+                    <div class="profil-col-map" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7968.774755708225!2d104.74905477770997!3d-2.989839999999983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b7773dd68ab73%3A0x38644e90f87df57!2sBADAN%20PENDAPATAN%20DAERAH%20KOTA%20PALEMBANG!5e0!3m2!1sen!2sus!4v1771584553631!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="profil-col-text" data-aos="fade-left" data-aos-duration="1000">
+                        <h3>Lokasi Kantor Bapenda</h3>
+                        <p class="alamat-text">Jl. Merdeka No.22, 22 Ilir, Kec. Bukit Kecil, Kota Palembang, Sumatera Selatan 30113</p>
+                        <p>Lokasi kami sangat strategis dan mudah dijangkau oleh masyarakat, berada di pusat kota Palembang untuk memberikan kemudahan pelayanan perpajakan daerah kepada Anda.</p>
+                    </div>
+                </div>
+
+                <div class="profil-row">
+                    <div class="profil-col-text" data-aos="fade-right" data-aos-duration="1000">
+                        <h3>Waktu Pelayanan</h3>
+                        <p>Kami siap melayani Anda pada jam kerja operasional berikut. Silakan kunjungi kantor kami untuk konsultasi dan pembayaran pajak daerah secara langsung.</p>
+                        
+                        <div class="jam-operasional-clean">
+                            <h4 style="font-size: 1.1rem; color: #0f172a; margin-bottom: 10px;">Hari Kerja Normal:</h4>
+                            <ul>
+                                <li><strong>Senin - Kamis:</strong> 08.00 WIB - 16.00 WIB</li>
+                                <li><strong>Jumat:</strong> 08.00 WIB - 16.30 WIB</li>
+                                <li><strong>Sabtu - Minggu:</strong> Tutup </li>
+                            </ul>
+
+                            <h4 style="font-size: 1.1rem; color: #0f172a; margin-top: 20px; margin-bottom: 10px;">Khusus Bulan Ramadan:</h4>
+                            <ul>
+                                <li><strong>Senin - Kamis:</strong> 08.00 WIB - 15.00 WIB</li>
+                                <li><strong>Jumat:</strong> 08.00 WIB - 15.30 WIB</li>
+                                <li><strong>Sabtu - Minggu:</strong> Tutup </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="profil-col-img" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="IMAGE/pegawai-bapenda.jpg" alt="Pegawai Bapenda Bekerja">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PAJAK DAERAH -->
+    <section id="pajak" class="pajak-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                <h2>13 Jenis Pajak Daerah Kota Palembang</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="pajak-grid">
+                
+                <div class="pajak-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pajak-bg" style="background-image: url('IMAGE/pajak-hotel.jpg');"></div>
+                    <div class="pajak-overlay"></div>
+                    <div class="pajak-content"><h3>Pajak Hotel</h3></div>
+                </div>
+
+                <div class="pajak-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pajak-bg" style="background-image: url('IMAGE/pajak-restoran.jpg');"></div>
+                    <div class="pajak-overlay"></div>
+                    <div class="pajak-content"><h3>Pajak Restoran</h3></div>
+                </div>
+
+                <div class="pajak-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pajak-bg" style="background-image: url('IMAGE/pajak-hiburan.jpg');"></div>
+                    <div class="pajak-overlay"></div>
+                    <div class="pajak-content"><h3>Pajak Hiburan</h3></div>
+                </div>
+
+                <div class="pajak-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="pajak-bg" style="background-image: url('IMAGE/pajak-reklame.jpg');"></div>
+                    <div class="pajak-overlay"></div>
+                    <div class="pajak-content"><h3>Pajak Reklame</h3></div>
+                </div>
+
+                <div class="pajak-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="pajak-bg" style="background-image: url('IMAGE/pajak-penerangan.jpg');"></div>
+                    <div class="pajak-overlay"></div>
+                    <div class="pajak-content"><h3>Pajak Penerangan Jalan</h3></div>
+                </div>
+
+                <div class="pajak-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="pajak-bg" style="background-image: url('IMAGE/pajak-mblb.jpg');"></div>
+                    <div class="pajak-overlay"></div>
+                    <div class="pajak-content"><h3>Pajak Mineral Bukan Logam dan Batuan (MBLB)</h3></div>
+                </div>
+
+                <div class="pajak-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="pajak-bg" style="background-image: url('IMAGE/pajak-parkir.jpg');"></div>
+                    <div class="pajak-overlay"></div>
+                    <div class="pajak-content"><h3>Pajak Parkir</h3></div>
+                </div>
+
+                <div class="pajak-card" data-aos="fade-up" data-aos-delay="800">
+                    <div class="pajak-bg" style="background-image: url('IMAGE/pajak-airtanah.jpg');"></div>
+                    <div class="pajak-overlay"></div>
+                    <div class="pajak-content"><h3>Pajak Air Tanah</h3></div>
+                </div>
+
+                <div class="pajak-card" data-aos="fade-up" data-aos-delay="900">
+                    <div class="pajak-bg" style="background-image: url('IMAGE/pajak-walet.jpg');"></div>
+                    <div class="pajak-overlay"></div>
+                    <div class="pajak-content"><h3>Pajak Sarang Burung Walet</h3></div>
+                </div>
+
+                <div class="pajak-card" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="pajak-bg" style="background-image: url('IMAGE/pajak-pbb.jpg');"></div>
+                    <div class="pajak-overlay"></div>
+                    <div class="pajak-content"><h3>Pajak Bumi dan Bangunan (PBB-P2)</h3></div>
+                </div>
+
+                <div class="pajak-card" data-aos="fade-up" data-aos-delay="1100">
+                    <div class="pajak-bg" style="background-image: url('IMAGE/pajak-bphtb.jpg');"></div>
+                    <div class="pajak-overlay"></div>
+                    <div class="pajak-content"><h3>Bea Perolehan Hak atas Tanah dan Bangunan (BPHTB)</h3></div>
+                </div>
+
+                <div class="pajak-card" data-aos="fade-up" data-aos-delay="1100">
+                    <div class="pajak-bg" style="background-image: url('IMAGE/pajak-minerba.jpg');"></div>
+                    <div class="pajak-overlay"></div>
+                    <div class="pajak-content"><h3>Pajak Mineral dan Batubara (MINERBA)</h3></div>
+                </div>
+
+                <div class="pajak-card" data-aos="fade-up" data-aos-delay="1100">
+                    <div class="pajak-bg" style="background-image: url('IMAGE/pajak-opsen.jpg');"></div>
+                    <div class="pajak-overlay"></div>
+                    <div class="pajak-content"><h3>Opsen Pajak Daerah (PKB & BBNKB)</h3></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="kontak" class="footer-section">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>BAPENDA KOTA PALEMBANG</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Merdeka No.22, 22 Ilir, Kec. Bukit Kecil, Kota Palembang, Sumatera Selatan 30113</p>
+                <p><i class="fas fa-phone-alt"></i> +62 882-1047-1232</p>
+                <p><i class="fas fa-envelope"></i> admin@bapenda.palembang.go.id</p>
+            </div>
+
+            <div class="footer-social">
+                <h3>Ikuti Kami</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/bapendapalembang/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/index.php/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="http://bapenda.sumselprov.go.id/" target="_blank"><i class="fas fa-globe"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Badan Pendapatan Daerah Kota Palembang. Semua Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="JS/style.js"></script>
+</body>
+</html>
