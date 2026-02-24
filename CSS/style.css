@@ -7,9 +7,12 @@
     scroll-behavior: smooth;
 }
 
-body {
-    overflow-x: hidden;
-    background-color: #fffaf5; /* Putih Gading - Hangat & Mewah */
+/* Tambahkan 'html' di sini dan pastikan max-width 100% */
+html, body {
+    overflow-x: hidden; /* Mencegah scroll ke samping */
+    width: 100%;
+    max-width: 100%;
+    background-color: #fffaf5; 
 }
 
 /* ================= CONTAINER UMUM ================= */
@@ -466,6 +469,8 @@ body {
 
 .map-container iframe {
     display: block;
+    width: 100%; /* WAJIB DITAMBAHKAN: Agar map tidak melebar keluar layar HP */
+    height: 100%; /* Opsional: Agar tinggi mengikuti container */
 }
 
 /* Desain Jam Operasional Clean */
@@ -521,7 +526,8 @@ body {
 /* Mengatur susunan Grid (Otomatis menyesuaikan layar) */
 .pajak-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* UBAH 280px MENJADI 240px atau 250px agar aman di HP kecil */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
     gap: 30px;
     margin-top: 40px;
 }
@@ -1020,3 +1026,5 @@ body {
             .member-item .img-wrapper { width: 140px; height: 140px; }
             .members-grid { gap: 30px; }
         }
+
+        
